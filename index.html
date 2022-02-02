@@ -37,13 +37,27 @@
                     "/bootstrap5/js/bootstrap.min.js": { "type": "js", "reload": false },
                     "/bootstrap5/css/bootstrap.min.css": { "type": "css", "reload": false },
                     "/app/sidebar.css": { "type": "css", "reload": false },
-                    "/app/loader.js": { "type": "js" }
+                    "/app/bs5app.js": { "type": "js" , "reload": false},
+                    "/app/loader.js": { "type": "js" , "reload": false}
+                },
+                "content":{
+                    "/content/getting-start/introduction.html": { "type": "file" },
+                    "/content/getting-start/contents.html": { "type": "file" },
+                    "/content/getting-start/accessibility.html": { "type": "file" },
+                    "/content/getting-start/contribute.html": { "type": "file" },
+                    "/content/getting-start/browser-and-devices.html": { "type": "file" },
+                    "/content/getting-start/download.html": { "type": "file" },
+                    "/content/getting-start/javascript.html": { "type": "file" },
+                    "/content/getting-start/parcel.html": { "type": "file" },
+                    "/content/getting-start/rfs.html": { "type": "file" },
+                    "/content/getting-start/rtl.html": { "type": "file" },
+                    "/content/getting-start/webpack.html": { "type": "file" },
                 }
             },
             "path": {
                 "/": {
                     "title": "BootStrap5 中文文档",
-                    "preload": ["init"],
+                    "preload": ["content","init"],
                     "body": {
                         "/content/index.html": { "type": "html", "target": { "type": "body" } }
                     }
